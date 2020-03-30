@@ -1,5 +1,5 @@
-import { Configuration } from '@nuxt/types'
-import colors from 'vuetify/es5/util/colors'
+import { Configuration } from '@nuxt/types';
+import colors from 'vuetify/es5/util/colors';
 
 const config: Configuration = {
   mode: 'spa',
@@ -60,7 +60,7 @@ const config: Configuration = {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -81,7 +81,14 @@ const config: Configuration = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    terser: {
+      terserOptions: {
+        compress: {
+          drop_console: process.env.NODE_ENV === 'production'
+        }
+      }
+    }
   }
-}
-export default config
+};
+export default config;
