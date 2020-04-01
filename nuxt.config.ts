@@ -46,7 +46,8 @@ const config: Configuration = {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/markdownit'
   ],
   /*
    ** Axios module configuration
@@ -74,6 +75,27 @@ const config: Configuration = {
       }
     }
   },
+
+  markdownit: {
+    preset: 'default',
+    injected: true,
+    breaks: false,
+    html: false,
+    linkify: true,
+    typographer: true,
+    langPrefix: 'language-',
+    quotes: '“”‘’',
+    use: [
+      'markdown-it-br',
+      [
+        'markdown-it-external-links',
+        {
+          externalTarget: '_blank'
+        }
+      ]
+    ]
+  },
+
   /*
    ** Build configuration
    */
