@@ -1,8 +1,20 @@
 import { Configuration } from '@nuxt/types';
 import colors from 'vuetify/es5/util/colors';
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/nuxt-vuetify-sample/'
+        }
+      }
+    : {};
+
 const config: Configuration = {
   mode: 'spa',
+
+  ...routerBase,
+
   /*
    ** Headers of the page
    */
