@@ -29,6 +29,11 @@ export default {
           icon: 'mdi-language-markdown',
           title: 'markdown でリンクを別タブで開く、<br> で改行する',
           to: '/samples/md'
+        },
+        {
+          icon: 'mdi-phone-classic',
+          title: 'IMIコンポーネントツールによる電話番号正規化',
+          to: '/samples/contact'
         }
       ]
     };

@@ -16,6 +16,7 @@
     "@nuxt/typescript-runtime": "^0.4.0",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/markdownit": "^1.2.9",
+    "imi-enrichment-contact": "https://info.gbiz.go.jp/tools/imi_tools/resource/imi-enrichment-contact/imi-enrichment-contact-1.0.0.tgz",
     "markdown-it-br": "^1.0.0",
     "markdown-it-external-links": "^0.0.6",
     "nuxt": "^2.0.0"
