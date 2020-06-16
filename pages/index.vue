@@ -34,6 +34,11 @@ export default {
           icon: 'mdi-phone-classic',
           title: 'IMIコンポーネントツールによる電話番号正規化',
           to: '/samples/contact'
+        },
+        {
+          icon: 'mdi-grid',
+          title: 'TOAST UI Grid サンプル',
+          to: '/samples/tui-grid'
         }
       ]
     };
